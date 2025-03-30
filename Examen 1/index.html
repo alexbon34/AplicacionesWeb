@@ -10,58 +10,60 @@
     <link rel="stylesheet" href="style.CSS">
 </head>
 <body>
-  <header>
-    <h1>Tel: +506 89080808</h1>
+  
+  <div class="fondo"></div>
+  <header id="tel">
+    <p>Tel: +506 89080808</p>
   </header>
-  <header>
-    <h1>Calculadora virtual</h1>
+  <header id="titulo">
+    <p>Calculadora virtual</p>
   </header>
   <main>
-     <section>
-        <article>
-          <div class="container mt-4">
-            <div>
-              <input type="text" id="campo" value="0"></input>
-            </div>
-            <div>
-              <button class="operador" onclick="modificarCampo(' ')">C</button>
-              <button class="operador" onclick="modificarCampo('X')">X</button>
-              <button class="operador" onclick="modificarCampo('%')">%</button>
-              <button class="operador" onclick="modificarCampo('/')">/</button>
-            </div>
-            <div>
-              <button onclick="modificarCampo('7')">7</button>
-              <button onclick="modificarCampo('8')">8</button>
-              <button onclick="modificarCampo('9')">9</button>
-              <button class="operador" onclick="modificarCampo('*')">*</button>
-            </div>
-            <div>
-              <button onclick="modificarCampo('4')">4</button>
-              <button onclick="modificarCampo('5')">5</button>
-              <button onclick="modificarCampo('6')">6</button>
-              <button class="operador" onclick="modificarCampo('-')">-</button>
-            </div>
-            <div>
-              <button onclick="modificarCampo('1')">1</button>
-              <button onclick="modificarCampo('2')">2</button>
-              <button onclick="modificarCampo('3')">3</button>
-              <button class="operador" onclick="modificarCampo('+')">+</button>
-            </div>
-            <div>
-              <button class="operador" onclick="modificarCampo('+/-')">+/-</button>
-              <button onclick="modificarCampo('0')">0</button>
-              <button class="operador" onclick="modificarCampo('.')">.</button>
-              <button class="operador" onclick="modificarCampo('=')">=</button>
-            </div>
-          </div>
-        </article>
-        <script>
-          function modificarCampo(par) {
-              document.getElementById("campo").value = par;
-          }
-        </script>
-      </section>
-      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    
+    <article>
+      <div class="container mt-4">
+        <div id="resultado">
+          <input type="text" id="campo" value="0"></input>
+        </div>
+        <div>
+          <button class="operador" onclick="modificarCampo(' ')"><strong>C</strong></button>
+          <button class="operador" onclick="modificarCampo('X')"><strong>X</strong></button>
+          <button class="operador" onclick="modificarCampo('%')"><strong>%</strong></button>
+          <button class="operador" onclick="modificarCampo('/')"><strong>/</strong></button>
+        </div>
+        <div>
+          <button onclick="modificarCampo('7')"><strong>7</strong></button>
+          <button onclick="modificarCampo('8')"><strong>8</strong></button>
+          <button onclick="modificarCampo('9')"><strong>9</strong></button>
+          <button class="operador" onclick="modificarCampo('*')"><strong>*</strong>
+          </button>
+        </div>
+        <div>
+          <button onclick="modificarCampo('4')"><strong>4</strong></button>
+          <button onclick="modificarCampo('5')"><strong>5</strong></button>
+          <button onclick="modificarCampo('6')"><strong>6</strong></button>
+          <button class="operador" onclick="modificarCampo('-')"><strong>-</strong></button>
+        </div>
+        <div>
+          <button onclick="modificarCampo('1')"><strong>1</strong></button>
+          <button onclick="modificarCampo('2')"><strong>2</strong></button>
+          <button onclick="modificarCampo('3')"><strong>3</strong></button>
+          <button class="operador" onclick="modificarCampo('+')"><strong>+</strong></button>
+        </div>
+        <div>
+          <button class="operador" onclick="modificarCampo('+/-')"><strong>+/-</strong></button>
+          <button onclick="modificarCampo('0')"><strong>0</strong></button>
+          <button class="operador" onclick="modificarCampo('.')"><strong>.</strong></button>
+          <button class="operador" onclick="modificarCampo('=')"><strong>=</strong></button>
+        </div>
+      </div>
+    </article>
+    <script>
+      function modificarCampo(par) {
+          document.getElementById("campo").value = par;
+      }
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
   </main> 
 </body>
 </html>
