@@ -1,0 +1,114 @@
+@import "tailwindcss";
+
+/* Reset básico */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+}
+
+/* Fondo general */
+body {
+    background-color: #eceae4;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Encabezado */
+/* Encabezado */
+header {
+    width: 100%;
+    background-color: #3fc1a6;
+    padding: 2rem;
+    display: flex;
+    justify-content: center;
+    color: white;
+}
+
+/* Contenedor de contador + fecha */
+header > div {
+    width: 90%;
+    max-width: 960px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+/* Contador de tareas */
+#taskCounter {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+/* Fecha */
+#taskdate {
+    text-align: right;
+    font-size: 1rem;
+    line-height: 1.2;
+}
+
+#taskdate span {
+    font-weight: 300;
+    font-size: 0.9rem;
+    color: #e0f3ec;
+}
+
+/* Contenido principal */
+main {
+    margin-top: 2rem;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+section {
+    background-color: white;
+    width: 90%;
+    max-width: 600px;
+    padding: 1rem;
+    border-radius: 1rem;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+/* Títulos de tareas */
+section h2 {
+    font-size: 0.9rem;
+    background-color: #f0f0f0;
+    padding: 0.5rem;
+    border-top-left-radius: 0.5rem;
+    border-top-right-radius: 0.5rem;
+    border-bottom: 1px solid #ccc;
+    color: #333;
+}
+
+/* Contenedores de tareas */
+#pendingTasksContainer,
+#completedTasksContainer {
+    margin-bottom: 1rem;
+}
+
+/* Estilo de tarea */
+.task-item {
+    display: flex;
+    align-items: center;
+    padding: 0.75rem;
+    border-bottom: 1px solid #ddd;
+}
+
+.task-item:last-child {
+    border-bottom: none;
+}
+
+.task-item input[type="checkbox"] {
+    margin-right: 1rem;
+    width: 18px;
+    height: 18px;
+}
+
+/* Estilo para tareas completadas */
+.task-item.completed label {
+    text-decoration: line-through;
+    color: #888;
+}
