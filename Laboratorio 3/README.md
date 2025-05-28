@@ -1,6 +1,7 @@
 # Herramientas existentes para realizar pruebas unitarias en el ecosistema de JavaScript
 ## Jest
 Es un framework de pruebas completo desarrollado por Facebook. Es conocido por su configuración cero ("zero-config"), su velocidad y sus características integradas como cobertura de código, simulaciones (mocks) y snapshots. Jest funciona especialmente bien con proyectos React, pero puede usarse con cualquier proyecto JavaScript.
+
 Nota: La configuración cero en Jest se refiere a su capacidad de funcionar sin necesidad de una configuración manual extensa. Está diseñado para ejecutarse con valores predeterminados que cubren la mayoría de los casos de prueba, lo que permite comenzar a escribir y ejecutar pruebas sin preocuparse por ajustes adicionales.
 ### Cuando sí aplica: 
 Necesitas una solución todo-en-uno con mínima configuración.
