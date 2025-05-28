@@ -4,13 +4,13 @@ Es un framework de pruebas completo desarrollado por Facebook. Es conocido por s
 
 Nota: La configuración cero en Jest se refiere a su capacidad de funcionar sin necesidad de una configuración manual extensa. Está diseñado para ejecutarse con valores predeterminados que cubren la mayoría de los casos de prueba, lo que permite comenzar a escribir y ejecutar pruebas sin preocuparse por ajustes adicionales.
 ### Cuando sí aplica: 
-Necesitas una solución todo-en-uno con mínima configuración.
-Trabajas con React, React Native o proyectos de Facebook.
-Requiere características como snapshots o cobertura de código integrada.
-Prefieres un framework con buen soporte para mocking.
+Cuando se requiere una solución todo-en-uno con mínima configuración.
+Cuando se trabaja con React, React Native o proyectos de Facebook.
+Ciando se necesita características como snapshots o cobertura de código integrada.
+Cuando el desarrollador prefiere un framework con buen soporte para mocking.
 ### Cuando no se recomienda: 
 Cuando se necesita un framework extremadamente ligero.
-Trabajas con módulos ES nativos sin transpilación (aunque esto ha mejorado en versiones recientes).
+Cuando se trabaja con módulos ES nativos sin transpilación (aunque esto ha mejorado en versiones recientes).
 Cuando se requiere una alta personalización del entorno de pruebas.
 ### Ejemplo de código:
 ```// math.js
