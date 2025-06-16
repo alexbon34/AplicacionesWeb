@@ -7,10 +7,19 @@ import { RouterLink } from 'vue-router'
     <RouterLink class="navbar-brand js-scroll-trigger" to="/">
       <span class="d-block d-lg-none">Start Bootstrap</span>
       <span class="d-none d-lg-block">
-        <img class="img-fluid img-profile rounded-circle mx-auto mb-2" src="/img/profile.jpg" alt="">
+        <img
+          class="img-fluid img-profile rounded-circle mx-auto mb-2"
+          src="/img/profile.jpg"
+          alt=""
+        />
       </span>
     </RouterLink>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent">
+    <button
+      class="navbar-toggler"
+      type="button"
+      data-toggle="collapse"
+      data-target="#navbarSupportedContent"
+    >
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
